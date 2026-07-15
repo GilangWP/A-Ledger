@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Login</title>
+</head>
+<body class="bg-[#eff4ff] min-h-screen flex flex-col justify-center">
+    <header class="mb-5 text-center font-inter">
+        <div>
+            <h1 class="text-2xl text-slate-900 font-semibold">A-Ledger</h1>
+            <p class="font-inter font-normal text-sm">Manajemen Keuangan Untuk Keluarga</p>
+        </div>
+    </header>
+    
+    <main class="w-full flex flex-col gap-4">
+        <div class="mx-auto w-full max-w-[400px] bg-white p-5 rounded-xl border border-[#C6C6CD] shadow-xl">
+                <form action="" class="flex flex-col gap-3">
+                    <label for="email" class="block font-label text-sm font-medium">Email Address</label>
+                    <input type="email" id="email" placeholder="your@email.com" class="w-full border border-gray-400 rounded-md shadow-sm p-2 font-inter text-sm font-medium">
+                    <div class="flex justify-between items-center">
+                        <label for="password" class="font-inter text-sm font-medium">Password</label>
+                    <p><a class="font-label text-xs text-sky-500" href="">Forgot your password?</a></p>
+                    </div>
+                    <div class="relative">
+                        <button class="absolute inset-y-0 right-0 pr-3
+                    flex items-center"> <!-- Liat password -->
+                            <i class="leading-none fi fi-rr-eye"></i>
+                        </button> 
+                        <input type="password" id="password" placeholder="********" class="w-full border border-gray-400 rounded-md shadow-sm p-2 font-label text-sm">
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox" id="remember">
+                        <label class="font-inter text-sm" for="remember">Remember this device</label>
+                    </div>
+                    <button class="font-label text-sm text-white outline-1 rounded-md flex justify-center items-center h-10 bg-black gap-1">Sign In <i class="fa-sharp fa-solid fa-arrow-right"></i> </button>
+                    <a href="dashboard.html">Buka dashboard</a>
+                </form>
+                <p class="font-label text-sm text-center mt-3">Or Continue with</p>
+        </div>
+        <div class="text-sm">
+            <p class="text-center font-inter">Don't have an account? <a class="font-inter font-semibold text-sky-500" href="/register">Create an account</a></p>
+        </div>
+    </main>
+
+</body>
+</html>
