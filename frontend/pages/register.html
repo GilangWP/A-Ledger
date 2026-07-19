@@ -3,10 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="/src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Register</title>
 </head>
-<body>
-    
+<body class="bg-[#eff4ff] min-h-screen flex flex-col justify-center">    
+    <main class="w-full flex flex-col gap-4">
+        <div class="flex flex-col gap-3 mx-auto w-full max-w-[400px] bg-white p-5 rounded-xl border border-[#C6C6CD] shadow-xl">
+            <div class="flex flex-col gap-1">
+                <h1 class="font-inter text-xl font-bold">Create Account</h1>
+                <p class="font-inter text-sm">Start your journey toward family financial clarity.</p>
+            </div>
+            <form action="" class="flex flex-col gap-3">
+                <div class="flex flex-col gap-3">
+                    <label for="fullName" class="font-label text-sm">Full Name</label>
+                    <input type="text" id="fullName" placeholder="John Doe" class="w-full border border-gray-400 rounded-md shadow-sm p-2 font-inter text-sm font-medium">
+                
+                    <label for="email" class="font-label text-sm">Email Address</label>
+                    <input type="email" id="email" placeholder="john@gmail.com" class="w-full border border-gray-400 rounded-md shadow-sm p-2 font-inter text-sm font-medium">
+                    
+                    <div class="flex gap-3">
+                        <div class="flex flex-col gap-2">
+                            <label for="password" class="font-label text-sm">Password</label>
+                            <div class="relative">
+                                <button class="absolute inset-y-0 right-0 pr-3 flex items-center"> <!-- Liat password -->
+                                    <i class="leading-none fi fi-rr-eye"></i>
+                                </button> 
+                                <input type="password" id="password" placeholder="********" class="w-full border border-gray-400 rounded-md shadow-sm p-2 font-inter text-sm font-medium">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="confPassword" class="font-label text-sm">Confirm Password</label>
+
+                            <div class="relative">
+                                <button class="absolute inset-y-0 right-0 pr-3 flex items-center"> <!-- Liat password -->
+                                    <i class="leading-none fi fi-rr-eye"></i>
+                                </button>
+                                <input type="password" id="confPassword" placeholder="********" class="w-full border border-gray-400 rounded-md shadow-sm p-2 font-inter text-sm font-medium">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="font-label text-sm text-white outline-1 rounded-md flex justify-center items-center h-10 bg-black gap-1">Next Step<i class="fa-sharp fa-solid fa-arrow-right"></i> </button>
+            </form>
+        </div>
+    </main>
+
 </body>
 </html>
