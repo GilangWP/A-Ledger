@@ -317,6 +317,12 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
   .pr-3 {
     padding-right: calc(var(--spacing) * 3);
   }
