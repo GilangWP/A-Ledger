@@ -17,8 +17,23 @@
            <h1 class="font-inter font-bold text-xl p-1">A-Ledger</h1> 
            <p class="font-label text-sm p-2">Already Have an Account? <a href="login.html" class="font-label font-semibold text-sky-500">Log in</a></p>
         </div>
-    </header>  
+    </header> 
+    
+    <!-- Stepper -->
+     <ol>
+        <li>
+
+        </li>
+        <li>
+
+        </li>
+        <li>
+            
+        </li>
+     </ol>
+
     <main class="w-full flex flex-1 flex-col gap-4 justify-center items-center">
+        <!-- Step 1 -->
         <div class="flex flex-col gap-3 mx-auto w-full max-w-[400px] bg-white p-5 rounded-xl border border-[#C6C6CD] shadow-xl">
             <div class="flex flex-col gap-1">
                 <h2 class="font-inter text-xl font-bold">Create Account</h2>
@@ -53,11 +68,75 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <button class="font-label text-sm text-white outline-1 rounded-md flex justify-center items-center h-10 bg-black gap-1">Next Step<i class="fa-sharp fa-solid fa-arrow-right"></i> </button>
             </form>
         </div>
+        <!-- Step 2 -->
+
+        <form action="">
+            <div class="flex flex-col gap-3 mx-auto w-full max-w-[800px] bg-white p-5 rounded-xl border border-[#C6C6CD] shadow-xl">
+                <div>
+                    <h2>Personalize your journey</h2>
+                    <p>Tell us a bit more about yourself to help tailor your family's dashboard.</p>
+                </div>
+                <!-- Profile Picture -->
+                <div>
+                    <div>
+
+                    </div>
+                    <div>
+                        <p>Profile Picture</p>
+                        <p>Upload an image to set your profile picture.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-3">
+                    <div class="flex flex-col gap-2">
+                        <label for="birthDate" class="font-label text-sm">Date of Birth</label>
+                        <div class="relative">
+                            <input type="date" id="birthDate" placeholder="dd/mm/yyyy" class="w-full border border-gray-400 rounded-md shadow-sm p-2 font-inter text-sm font-medium">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="phoneNum" class="font-label text-sm">Phone Number</label>
+                        <div class="relative">
+                            <button class="absolute inset-y-0 right-0 pr-2 flex items-center"> <!-- Liat password -->
+                                <i class="fa-solid fa-phone"></i>
+                            </button>
+                            <input type="tel" id="phoneNum" placeholder="+62 xxxxxxx" class="w-full border border-gray-400 rounded-md shadow-sm p-2 font-inter text-sm font-medium">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p>Role in Family</p>
+                    <div class="flex flex-row gap-3">
+                        <button class="flex flex-col w-full items-center border border-gray-400 rounded-md p-2 bg-white hover:bg-blue-500 text-black hover:text-white font-inter text-sm">
+                            <i class="fa-regular fa-user"></i>
+                            <span>Head</span>
+                        </button>
+                        <button class="flex flex-col w-full items-center border border-gray-400 rounded-md p-2 bg-white hover:bg-blue-500 text-black hover:text-white font-inter text-sm">
+                            <i class="fa-solid fa-user-group"></i>
+                            Partner
+                        </button>
+                        <button class="flex flex-col w-full items-center border border-gray-400 rounded-md p-2 bg-white hover:bg-blue-500 text-black hover:text-white font-inter text-sm">
+                            <i class="fa-regular fa-face-smile"></i>
+                            Dependent
+                        </button>
+                        <button class="flex flex-col w-full items-center border border-gray-400 rounded-md p-2 bg-white hover:bg-blue-500 text-black hover:text-white font-inter text-sm">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            Other
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <!-- Step 3 -->
+         <div>
+
+         </div>
     </main>
 
 </body>
