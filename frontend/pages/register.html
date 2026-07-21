@@ -76,9 +76,9 @@
 
         <form action="">
             <div class="flex flex-col gap-3 mx-auto w-full max-w-[800px] bg-white p-5 rounded-xl border border-[#C6C6CD] shadow-xl">
-                <div>
-                    <h2>Personalize your journey</h2>
-                    <p>Tell us a bit more about yourself to help tailor your family's dashboard.</p>
+                <div class="flex flex-col gap-1">
+                    <h2 class="font-inter text-xl font-bold">Personalize your journey</h2>
+                    <p class="font-inter text-sm">Tell us a bit more about yourself to help tailor your family's dashboard.</p>
                 </div>
                 <!-- Profile Picture -->
                 <div>
@@ -86,8 +86,8 @@
 
                     </div>
                     <div>
-                        <p>Profile Picture</p>
-                        <p>Upload an image to set your profile picture.</p>
+                        <p class="font-label text-sm">Profile Picture</p>
+                        <p class="font-inter text-sm">Upload an image to set your profile picture.</p>
                     </div>
                 </div>
 
@@ -95,7 +95,7 @@
                     <div class="flex flex-col gap-2">
                         <label for="birthDate" class="font-label text-sm">Date of Birth</label>
                         <div class="relative">
-                            <input type="date" id="birthDate" placeholder="dd/mm/yyyy" class="w-full border border-gray-400 rounded-md shadow-sm p-2 font-inter text-sm font-medium">
+                            <input type="date" id="birthDate" class="w-full border border-gray-400 rounded-md shadow-sm p-2 font-inter text-sm font-medium">
                         </div>
                     </div>
                     <div class="flex flex-col gap-2">
@@ -109,30 +109,30 @@
                     </div>
                 </div>
 
-                <div>
-                    <p>Role in Family</p>
+                <div class="flex flex-col gap-1">
+                    <p class="font-label text-sm">Role in Family</p>
                     <div class="flex flex-row gap-2">
                         <button class="flex flex-col w-full h-20 items-center justify-center border border-gray-400 rounded-md p-2 bg-white hover:bg-blue-500 text-black hover:text-white font-inter text-sm">
                             <i class="fa-regular fa-user"></i>
-                            <span>Head</span>
+                            <span class="font-inter text-sm">Head</span>
                         </button>
                         <button class="flex flex-col w-full 20 items-center justify-center border border-gray-400 rounded-md p-2 bg-white hover:bg-blue-500 text-black hover:text-white font-inter text-sm">
                             <i class="fa-solid fa-user-group"></i>
-                            Partner
+                            <span class="font-inter text-sm">Partner</span>
                         </button>
                         <button class="flex flex-col w-full 20 items-center justify-center border border-gray-400 rounded-md p-2 bg-white hover:bg-blue-500 text-black hover:text-white font-inter text-sm">
                             <i class="fa-regular fa-face-smile"></i>
-                            Dependent
+                            <span class="font-inter text-sm">Dependent</span>
                         </button>
                         <button class="flex flex-col w-full 20 items-center justify-center border border-gray-400 rounded-md p-2 bg-white hover:bg-blue-500 text-black hover:text-white font-inter text-sm">
                             <i class="fa-solid fa-ellipsis"></i>
-                            Other
+                            <span class="font-inter text-sm">Other</span>
                         </button>
                     </div>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <label for="bio">Short Bio (Optional)</label>
-                    <textarea name="bio" id="bio" maxlength="150" placeholder="E.g. Setting goals for the new year..." class="border border-gray-400 rounded-md p-2"></textarea>
+                    <label for="bio" class="font-label text-sm">Short Bio (Optional)</label>
+                    <textarea name="bio" id="bio" maxlength="150" placeholder="E.g. Setting goals for the new year..." class="border border-gray-400 rounded-md p-2 h-20 font-inter text-sm"></textarea>
                 </div>
             </div>
         </form>
