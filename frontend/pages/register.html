@@ -73,7 +73,6 @@
             </form>
         </div>
         <!-- Step 2 -->
-
         <form action="">
             <div class="flex flex-col gap-3 mx-auto w-full max-w-[800px] bg-white p-5 rounded-xl border border-[#C6C6CD] shadow-xl">
                 <div class="flex flex-col gap-1">
@@ -138,8 +137,28 @@
         </form>
 
         <!-- Step 3 -->
-         <div>
-
+         <div class="flex flex-row gap-2">
+            <div class="flex flex-col gap-3 mx-auto w-full max-w-[400px] bg-white p-5 rounded-md border border-[#C6C6CD] shadow-xl">
+                <div class="flex flex-col gap-2 h-full">
+                    <div class="flex items-center justify-center w-10 h-10 bg-sky-200 border border-gray-400 rounded-md">
+                        <i class="fa-regular fa-house"></i>
+                    </div>
+                    <h2 class="font-inter text-md font-bold">Create a New Family</h2>
+                    <p class="font-inter text-sm">Start fresh as the primary administrator. You'll set up budgets and invite family members later.</p>
+                    <p class="mt-auto font-label text-sm text-sky-400"><a href="">SELECT OPTION<i class="fa-sharp fa-solid fa-arrow-right"></i></a></p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-3 mx-auto w-full max-w-[400px] bg-white p-5 rounded-md border border-[#C6C6CD] shadow-xl">
+                <div class="flex flex-col gap-2">
+                    <div class="flex items-center justify-center w-10 h-10 bg-sky-200 border border-gray-400 rounded-md">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+                    <h2 class="font-inter text-md font-bold">Join an Existing Family</h2>
+                    <p class="font-inter text-sm">Received an invite? Enter your unique 6-digit access code to connect with your household.</p>
+                    <label for="inviteCode" class="font-label text-xs">INVITE CODE</label>
+                    <input type="text" id="inviteCode" placeholder="EQ-X293" class="border border-gray-400 rounded-md p-2 font-label text-xs">
+                </div>
+            </div>
          </div>
     </main>
 
